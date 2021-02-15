@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'luca-frontennd-app'`, () => {
+  it(`should have as title 'luca-frontend-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('luca-frontennd-app');
+    expect(app.title).toEqual('luca-frontend-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('luca-frontennd-app app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('luca-frontend-app app is running!');
   });
 });
