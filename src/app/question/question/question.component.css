@@ -1,0 +1,73 @@
+:host{
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    margin-top: 25px;
+    display: flex;
+    min-width: 322px;
+    height: 128px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+
+.info-left > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-left--user{
+    width: 90px;
+    height: 90px;
+    background-image: url('../../../assets/user.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px;
+}
+
+
+.info-left--up{
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../assets/hand-up.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.info-left--down{
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../assets/hand-down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.info-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.info-right > h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4F4F4F;
+}
+
+.info-right > p{
+    width: 300px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #828282;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+

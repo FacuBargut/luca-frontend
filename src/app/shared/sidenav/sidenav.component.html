@@ -1,0 +1,33 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened>
+        <header>
+            <div class="header--img"></div>
+        </header>
+        <mat-list role="list">
+            <mat-list-item role="listitem"><div class="icon home"></div>  Inicio</mat-list-item>
+            <mat-list-item role="listitem"><div class="icon courses"></div>  Mis cursos</mat-list-item>
+            <mat-list-item role="listitem"><div class="icon quizzes"></div>  Quizzes</mat-list-item>
+            <mat-list-item role="listitem"><div class="icon study-plans"></div>  Mi plan de estudios</mat-list-item>
+            <mat-list-item role="listitem"><div class="icon community"></div>  Comunidad</mat-list-item>
+            <mat-list-item role="listitem"><div class="icon help-center"></div>  Centro de ayuda</mat-list-item>
+          </mat-list>
+    </mat-sidenav>
+        <mat-sidenav-content>
+        <app-header></app-header>
+        <main>
+            <div class="title-container">
+                <h2>Comunidad Luca</h2>
+                <button (click)="openDialog()">Nueva Pregunta</button>
+            </div>
+            <mat-tab-group >
+                <mat-tab label="POPULARES">
+                    <section>
+                        <app-questions></app-questions>
+                    </section>
+                </mat-tab>
+                <mat-tab label="NUEVOS">Seccion de NUEVOS</mat-tab>
+                <mat-tab label="SEGUIDOS">Seccion de SEGUIDOS</mat-tab>
+            </mat-tab-group>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>

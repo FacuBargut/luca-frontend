@@ -1,0 +1,18 @@
+<div class="container">
+    <header>
+        <h1>Haz una pregunta</h1>
+        <button (click)="closeDialog()"></button>
+    </header>
+    <form id="form" [formGroup]="questionForm" (ngSubmit)="submitQuestion($event)">
+        <div class="title-container">
+            <label>Título de publicación</label>
+            <input  id="input_title" formControlName="title" type="text" placeholder="Escribe tu título aquí">
+        </div>
+        <div class="publication-container">
+            <label>Publicación</label>
+            <textarea  id="input_publication" formControlName="publication" cols="30" rows="10" placeholder="Escribe tu publicación aquí"></textarea>
+        </div>
+
+        <button [disabled]="questionForm.invalid" type="submit">Publicar</button>
+    </form>
+</div>

@@ -1,0 +1,63 @@
+header{
+    height: 64px;
+    padding: 10px;
+    background: #FFFFFF;
+}
+
+header > div{
+    width: 89px;
+    height: 30px;
+    background-image: url('../../../assets/Luca..png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon{
+    width: 28px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+::ng-deep mat-list mat-list-item > div{
+    color: grey;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.home{
+    background-image: url('../../../assets/home.svg');
+}
+.courses{
+    background-image: url('../../../assets/ic_video_32.svg');
+}
+.quizzes{
+    background-image: url('../../../assets/ic_notification_32.svg');
+}
+.study-plans{
+    background-image: url('../../../assets/ic_studyplan_32.svg');
+}
+.community{
+    background-image: url('../../../assets/ic_community_32.svg');
+}
+.help-center{
+    background-image: url('../../../assets/ellipse.svg');
+}
+
+.title-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.title-container button{
+    background: #3843D0;
+border: 3px solid #212B80;
+box-sizing: border-box;
+box-shadow: 0px 2px 0px #212B80;
+border-radius: 10px;
+color: #FFFFFF;
+padding: 10px 24px;
+font-weight: 600;
+}

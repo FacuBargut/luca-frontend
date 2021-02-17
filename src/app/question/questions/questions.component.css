@@ -1,0 +1,28 @@
+section{
+    position: relative;
+    margin-top: 25px;
+    height: 500px;
+    overflow: auto;
+}
+
+.add_question{
+    position: fixed;
+    right: 40px;
+    bottom: 23%;
+    width: 76px;
+    height: 76px;
+    background-color: #3843D0;
+    box-shadow: 0px 2px 0px #212B80;
+    border-radius: 100px;
+    border: none;
+    background-image: url('../../../assets/edit.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .add_question{
+        display: none;
+    }
+  }
